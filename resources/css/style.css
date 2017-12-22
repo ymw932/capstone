@@ -1,3 +1,138 @@
-p {
-  color: green;
+html,body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 0
+
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+/*Header*/
+
+
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+
+  align-items: center;
+
+
+}
+
+.logo {
+  display: flex;
+  margin-left: 24px;
+  align-items: center;
+}
+
+.logo img {
+  margin-left: 24px;
+
+}
+
+.logo h4 {
+  font-size: 2rem;
+  margin-left: 1rem;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 700;
+}
+
+.logo span {
+  color: red;
+}
+
+.pc ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.pc ul li a {
+  text-decoration: none;
+  color: black;
+}
+/*Change when working on Mobile*/
+nav.mobile {
+  display: none;
+}
+
+/*Middle Section*/
+
+.banner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 32px 24px;
+  background-color: #D3D3D3;
+
+
+}
+
+.left {
+  max-width: 60%;
+  margin-right: 24px;
+
+}
+
+.left img {
+  width: 100%;
+}
+
+.right {
+  padding-right: 3vw;
+  opacity: 0.7;
+  margin: 1rem 2rem;
+
+}
+
+.right h1 {
+  font-family: "Roboto",sans-serif;
+  font-weight: 700;
+  font-size: 3vw;
+  line-height: 1.2;
+  padding-right: 15rem;
+
+}
+
+.right h3 {
+  font-family: "Roboto",sans-serif;
+  font-size: 1.5vw;
+  margin-top: 1.5rem;
+  padding-right: 15rem;
+}
+
+.right span {
+    text-align: center;
+    background-color: black;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2;
+    font-weight: 700;
+    display: block;
+    padding: 16px 0;
+    margin-right: 17vw;
+    margin-top: 2rem;
+}
+
+.right span a:hover {
+  color: lightgrey;
+}
+
+.right a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Info Section*/
+
+.info-left .image {
+  width: 48%;
+  padding: 2rem 1.5rem;
+
+
 }
