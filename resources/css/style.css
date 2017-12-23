@@ -10,6 +10,18 @@ html,body {
   margin: 0 auto;
 }
 
+h1 {
+  font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: 1.2
+}
+
+a {
+  text-decoration: none;
+
+}
+
 
 
 /*Header*/
@@ -81,7 +93,7 @@ nav.mobile {
 }
 
 .left img {
-  width: 100%;
+  width: 102%;
 }
 
 .right {
@@ -128,11 +140,151 @@ nav.mobile {
   color: white;
 }
 
-/*Info Section*/
+/*info-left*/
 
-.info-left .image {
-  width: 48%;
+.info {
+  display: flex;
   padding: 2rem 1.5rem;
 
+}
 
+.info a {
+  padding: 0.25rem 0.5rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.2rem;
+  opacity: 0.7;
+}
+
+.info a:hover {
+  color: lightgrey;
+}
+
+.info-left {
+  width: 62%;
+  margin-right: 1.5rem;
+}
+
+.info-left .image img {
+  width: 100%;
+
+}
+
+.content {
+  width: 45vw;
+  margin-top: 2rem;
+}
+
+.content p {
+  margin-top: 1.5rem;
+}
+
+.content h4 {
+  margin-top: 2rem;
+}
+
+.content h1 {
+  font-family:'Alegreya Sans',sans-serif;
+}
+
+/*info-Right*/
+
+.info-right {
+    width: 40%;
+    border-left: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+}
+
+.content-right:first-child {
+  border-bottom: 2px solid red;
+}
+
+.content-right:last-child {
+  background-color: lightgrey;
+}
+
+.content-img {
+  width: 35%;
+  margin: 16px;
+
+}
+
+.content-img img {
+  width: 100%;
+}
+
+.discription {
+  width: 60%;
+}
+
+.discription h4 {
+  font-family: "Roboto",sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+
+}
+
+.discription h5 {
+  font-family: "Lato",sans-serif;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+/*Learn*/
+
+.study {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgrey;
+  opacity: 0.8;
+}
+
+.study h1 {
+  padding: 2.5rem 0;
+  text-align: center;
+  width: 100%;
+  margin: 3rem 0;
+  font-family: "lato",sans-serif;
+}
+
+.programs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 85%;
+
+}
+
+.courses {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  margin-bottom: 32px;
+}
+
+.courses img {
+  width: 100%;
+
+}
+
+.course-discription {
+  margin: 1rem 1rem 1.5rem;
+}
+
+.course-discription h4 {
+  font-size: 2rem;
+  font-family: "Lato",sans-serif;
+  font-weight: 400;
+}
+
+.course-discription p {
+  margin: 1rem;
 }
