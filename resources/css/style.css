@@ -10,12 +10,6 @@ html,body {
   margin: 0 auto;
 }
 
-h1 {
-  font-family: "Roboto",sans-serif;
-    font-weight: 700;
-    font-size: 3vw;
-    line-height: 1.2
-}
 
 a {
   text-decoration: none;
@@ -106,9 +100,9 @@ nav.mobile {
 .right h1 {
   font-family: "Roboto",sans-serif;
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 2rem;;
   line-height: 1.2;
-  padding-right: 15rem;
+
 
 }
 
@@ -238,19 +232,19 @@ nav.mobile {
 
 /*Learn*/
 
-.study {
+#study {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: lightgrey;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
-.study h1 {
-  padding: 2.5rem 0;
+#study h1 {
+  padding: 1.5rem 0;
   text-align: center;
   width: 100%;
-  margin: 3rem 0;
+  margin: 1.5rem 0;
   font-family: "lato",sans-serif;
 }
 
@@ -280,11 +274,102 @@ nav.mobile {
 }
 
 .course-discription h4 {
-  font-size: 2rem;
+  font-size: 20px;
   font-family: "Lato",sans-serif;
   font-weight: 400;
+  margin-left: 1rem;
 }
 
 .course-discription p {
   margin: 1rem;
+}
+/* Exhibit left */
+
+#thesis h4 {
+  font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.4;
+
+}
+
+#thesis h1 {
+  padding: 1.5rem 0;
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-family: "lato",sans-serif;
+}
+
+.exhibit {
+  display: flex;
+  width: 100%;
+}
+
+.exhibit-video {
+  width: 60%;
+  margin: 0 30px 45px;
+}
+
+.video-discription p {
+  margin-top: 0.5rem;
+}
+
+.video-discription h4 {
+  margin-top: 1rem;
+}
+
+/*Exhibit right*/
+
+.exhibit-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.other {
+  display: flex;
+  align-items: center;
+}
+
+.other:first-child {
+  background-color: lightgrey;
+}
+
+.exhibit-img {
+  width: 35%;
+  margin: 16px;
+}
+
+.exhibit-img img {
+  width: 100%;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto",sans-serif;
+  width: 100%;
+  height: 93px;
+  font-size: 0.9rem;
+  border-top: 2px solid red;
+  opacity: 0.6;
+
+}
+
+.legal {
+  margin: 1rem 1.5rem;
+}
+
+footer nav {
+  margin: 1rem 1.5rem;
+}
+
+footer nav li {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 1rem;
 }
