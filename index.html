@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Risque" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -27,12 +29,13 @@
           <li><a href="#">For companies</a></li>
           <li><a href="">Sign in</a></li>
         </ul>
-        <nav class="mobile">
-          <a href="#"><img src="resources/image/ic-logo.svg" alt="Company Logo" /></a>
-          <a href="#"><img src="resources/image/ic-on-campus.svg" alt="Campus Logo" /></a>
-          <a href="#"><img src="resources/image/ic-online.svg" alt="Stay online Logo" /></a>
-          <a href="#"><img src="resources/image/ic-login.svg" alt="Login Logo" /></a>
-        </nav>
+      </nav>
+      <nav class="mobile">
+        <a href="#"><img src="resources/image/ic-logo.svg" alt="Company Logo" /></a>
+        <a href="#"><img src="resources/image/ic-on-campus.svg" alt="Campus Logo" /></a>
+        <a href="#"><img src="resources/image/ic-online.svg" alt="Stay online Logo" /></a>
+        <a href="#"><img src="resources/image/ic-login.svg" alt="Login Logo" /></a>
+      </nav>
     </div>
   </header>
   <!-- main-content -->
@@ -67,7 +70,9 @@
           <div class="content-img">
             <img src="resources/image/information-orientation.jpg" alt="">
           </div>
-          <!-- Add mobile here -->
+          <div class="content-img-mobile">
+            <img src="resources/image/information-orientation-mobile.jpg" alt="">
+          </div>
           <div class="discription">
             <h4>Orientation date</h4>
             <h5>Tue 10/11 & Wed 10/12: 8am-3pm</h5>
@@ -78,15 +83,21 @@
           <div class="content-img">
             <img src="resources/image/information-campus.jpg" alt="">
           </div>
+          <div class="content-img-mobile">
+            <img src="resources/image/information-campus-mobile.jpg" alt="">
+          </div>
           <div class="discription">
             <h4>Our campus</h4>
-            <h5>Find wich campus is close by you</h5>
+            <h5>Find which campus is close by you</h5>
             <a href="#">Read more</a>
           </div>
         </div>
         <div class="content-right">
           <div class="content-img">
             <img src="resources/image/information-guest-lecture.jpg" alt="">
+          </div>
+          <div class="content-img-mobile">
+            <img src="resources/image/information-guest-lecture-mobile.jpg" alt="">
           </div>
           <div class="discription">
             <h4>Special guest lecture</h4>
@@ -149,10 +160,20 @@
           </div>
         </div>
       </div>
+      <div class="courses-mobile">
+        <ul>
+          <li><a href="#"><h4>Software engineering</h4></a></li>
+          <li><a href="#"><h4>Computer Art</h4></a></li>
+          <li><a href="#"><h4>Design</h4></a></li>
+          <li><a href="#"><h4>Data</h4></a></li>
+          <li><a href="#"><h4>Business</h4></a></li>
+          <li><a href="#"><h4>Marketing</h4></a></li>
+        </ul>
+      </div>
     </div>
     <!-- Thesis Exhibit  -->
     <div id="thesis">
-      <h1>Thesis exhibit</h1>
+      <h1>Thesis Exhibit</h1>
       <div class="exhibit">
         <div class="exhibit-video">
           <video width="100%" height="auto" controls autoplay loop>
@@ -190,6 +211,7 @@
   <footer>
     <div class="legal">
       <span>©2016 Colmar Academy All Rights reserved</span>
+      <i class="fa fa-facebook"></i>
     </div>
     <nav>
       <ul>

@@ -6,6 +6,7 @@ html,body {
 }
 
 .container {
+  max-width: 75rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -13,7 +14,6 @@ html,body {
 
 a {
   text-decoration: none;
-
 }
 
 
@@ -63,10 +63,7 @@ header .container {
   text-decoration: none;
   color: black;
 }
-/*Change when working on Mobile*/
-nav.mobile {
-  display: none;
-}
+
 
 /*Middle Section*/
 
@@ -74,33 +71,33 @@ nav.mobile {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
   background-color: #D3D3D3;
 
 
 }
 
 .left {
-  max-width: 60%;
+  max-width: 100%;
   margin-right: 24px;
 
 }
 
 .left img {
-  width: 102%;
+  width: 100%;
 }
 
 .right {
-  padding-right: 3vw;
-  opacity: 0.7;
+  padding-right: 2rem;
+  opacity: 0.8;
   margin: 1rem 2rem;
 
 }
 
 .right h1 {
-  font-family: "Roboto",sans-serif;
+  font-family: "Lato",sans-serif;
   font-weight: 700;
-  font-size: 2rem;;
+  font-size: 1.5rem;;
   line-height: 1.2;
 
 
@@ -108,9 +105,9 @@ nav.mobile {
 
 .right h3 {
   font-family: "Roboto",sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.1rem;
   margin-top: 1.5rem;
-  padding-right: 15rem;
+  padding-right: 8rem;
 }
 
 .right span {
@@ -121,8 +118,9 @@ nav.mobile {
     font-weight: 700;
     display: block;
     padding: 16px 0;
-    margin-right: 17vw;
+    margin-right: 4rem;
     margin-top: 2rem;
+    border-radius: 6px;
 }
 
 .right span a:hover {
@@ -147,7 +145,7 @@ nav.mobile {
   background-color: black;
   color: white;
   border-radius: 0.2rem;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .info a:hover {
@@ -165,12 +163,13 @@ nav.mobile {
 }
 
 .content {
-  width: 45vw;
-  margin-top: 2rem;
+  width: 32rem;
+  margin: 1rem 0;
 }
 
 .content p {
   margin-top: 1.5rem;
+  padding-right: 4rem;
 }
 
 .content h4 {
@@ -178,7 +177,8 @@ nav.mobile {
 }
 
 .content h1 {
-  font-family:'Alegreya Sans',sans-serif;
+  font-family:'Lato',sans-serif;
+  font-size: 2rem;
 }
 
 /*info-Right*/
@@ -188,6 +188,7 @@ nav.mobile {
     border-left: 2px solid red;
     display: flex;
     flex-direction: column;
+    opacity: 0.9;
 }
 
 .content-right {
@@ -218,16 +219,16 @@ nav.mobile {
 }
 
 .discription h4 {
-  font-family: "Roboto",sans-serif;
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-family: "Lato",sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
 
 }
 
 .discription h5 {
   font-family: "Lato",sans-serif;
   font-size: 1rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 /*Learn*/
@@ -246,6 +247,7 @@ nav.mobile {
   width: 100%;
   margin: 1.5rem 0;
   font-family: "lato",sans-serif;
+  font-size: 2rem;
 }
 
 .programs {
@@ -288,7 +290,7 @@ nav.mobile {
 #thesis h4 {
   font-family: "Lato", sans-serif;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 0;
     line-height: 1.4;
 
@@ -300,6 +302,7 @@ nav.mobile {
   width: 100%;
   margin: 1.5rem 0;
   font-family: "lato",sans-serif;
+  font-size: 2rem;
 }
 
 .exhibit {
@@ -358,6 +361,7 @@ footer {
   border-top: 2px solid red;
   opacity: 0.6;
 
+
 }
 
 .legal {
@@ -372,4 +376,213 @@ footer nav li {
   display: inline-block;
   text-decoration: none;
   margin-left: 1rem;
+}
+
+
+/* Mobile */
+
+
+@media only screen and (min-width: 750px) {
+  nav.mobile {
+    display: none;
+  }
+
+  .content-img-mobile img {
+    display: none;
+  }
+
+  .courses-mobile {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 750px) {
+
+  .container {
+    max-width: 100%;
+  }
+
+.logo,
+nav.pc {
+  display: none;
+}
+
+nav.mobile {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1.5rem 1rem;
+  align-items: center;
+
+}
+
+/* Banner */
+
+.banner {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .left {
+    margin: auto;
+
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 0
+  }
+
+  .right h3 {
+    padding: 0
+  }
+
+  .right span {
+    background-size: cover;
+    border-radius: 6px;
+    margin-right: 0;
+  }
+
+  /* Info Section */
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .info-left {
+    display: none;
+  }
+
+  .info-right {
+    width: 100%;
+    border: none;
+    display: flex;
+    margin: 1rem 0;
+  }
+
+  .content-right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-img {
+    display: none;
+  }
+
+  .discription {
+    width: 60%;
+    margin: 1.5rem;
+  }
+
+  .content-right:first-child {
+    border: none;
+}
+
+  .content-right:last-child {
+    background-color: white;
+}
+
+/* Learn */
+
+  #study {
+    padding: 16px 16px 32px 16px;
+  }
+
+  #study h1 {
+    text-align: center;
+    margin: 30px 0 16px;
+    font-size: 3.5rem;
+
+  }
+
+  #study h4 {
+    font-size: 1.2rem;
+    line-height: 1;
+    text-align: center;
+
+  }
+
+  .courses-mobile a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .courses-mobile a:hover {
+    color: #bebebe;
+  }
+
+
+  .programs {
+    display: none;
+  }
+
+  .courses-mobile {
+    display: block;
+    width: 70%;
+    opacity: 0.8;
+  }
+
+  .courses-mobile li {
+    background-color: white;
+    padding: 1.5rem 0.75rem;
+    margin-bottom: 1.5rem;
+    border-radius: 7px;
+  }
+
+  /* Thesis Exhibit */
+
+  #thesis .exhibit-right {
+    display: none;
+  }
+
+
+  #thesis h1 {
+    padding: 1.5rem 0;
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+    font-family: "lato",sans-serif;
+    font-size: 3.5rem;
+  }
+
+  .exhibit-video {
+    width: 100%;
+    margin: 0;
+  }
+
+  .video-discription {
+    padding: 1rem 1rem;
+  }
+
+  /* Footer */
+
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    opacity: 1;
+    border: 0;
+
+  }
+
+  footer .legal {
+    padding-top: 2rem;
+    color: #000000
+  }
+
+
+
+  footer nav {
+    display: none;
+  }
+
 }
