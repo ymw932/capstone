@@ -1,5 +1,5 @@
 html,body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 0
 
@@ -9,15 +9,18 @@ html,body {
   max-width: 75rem;
   width: 100%;
   margin: 0 auto;
+  background-color: #e8e8e8;
 }
 
 
 a {
   text-decoration: none;
+  color: black;
 }
 
-
-
+header,.banner,.info,#study,.other,.content-right{
+  border-radius: 8px;
+}
 /*Header*/
 
 
@@ -26,10 +29,11 @@ header .container {
   display: flex;
   justify-content: space-between;
   height: 64px;
+  align-items: center:
+}
 
-  align-items: center;
-
-
+nav.pc {
+  padding-top: 0.5rem;
 }
 
 .logo {
@@ -46,12 +50,11 @@ header .container {
 .logo h4 {
   font-size: 2rem;
   margin-left: 1rem;
-  font-family: 'Alegreya Sans', sans-serif;
   font-weight: 700;
 }
 
 .logo span {
-  color: red;
+  color: #E85F5C;
 }
 
 .pc ul li {
@@ -72,7 +75,7 @@ header .container {
   justify-content: flex-start;
   align-items: center;
   padding: 2rem 1.5rem;
-  background-color: #D3D3D3;
+  background-color: #8d99ae;
 
 
 }
@@ -89,7 +92,7 @@ header .container {
 
 .right {
   padding-right: 2rem;
-  opacity: 0.8;
+
   margin: 1rem 2rem;
 
 }
@@ -112,7 +115,7 @@ header .container {
 
 .right span {
     text-align: center;
-    background-color: black;
+    background-color: #E85F5C;
     font-family: "Lato", sans-serif;
     font-size: 1.2;
     font-weight: 700;
@@ -132,6 +135,7 @@ header .container {
   color: white;
 }
 
+
 /*info-left*/
 
 .info {
@@ -142,10 +146,9 @@ header .container {
 
 .info a {
   padding: 0.25rem 0.5rem;
-  background-color: black;
+  background-color: #E85F5C;
   color: white;
   border-radius: 0.2rem;
-  opacity: 0.8;
 }
 
 .info a:hover {
@@ -185,10 +188,8 @@ header .container {
 
 .info-right {
     width: 40%;
-    border-left: 2px solid red;
     display: flex;
     flex-direction: column;
-    opacity: 0.9;
 }
 
 .content-right {
@@ -196,12 +197,9 @@ header .container {
   align-items: center;
 }
 
-.content-right:first-child {
-  border-bottom: 2px solid red;
-}
 
 .content-right:last-child {
-  background-color: lightgrey;
+  background-color: #8d99ae;
 }
 
 .content-img {
@@ -237,8 +235,7 @@ header .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightgrey;
-  opacity: 0.9;
+  background-color: #8d99ae;
 }
 
 #study h1 {
@@ -259,7 +256,7 @@ header .container {
 }
 
 .courses {
-  background-color: white;
+  background-color: #e8e8e8;
   display: flex;
   flex-direction: column;
   width: 32%;
@@ -337,7 +334,7 @@ header .container {
 }
 
 .other:first-child {
-  background-color: lightgrey;
+  background-color: #8d99ae;
 }
 
 .exhibit-img {
@@ -354,18 +351,24 @@ header .container {
 footer {
   display: flex;
   justify-content: space-between;
+  text-align: center;
   font-family: "Roboto",sans-serif;
+  max-width: 75rem;
   width: 100%;
   height: 93px;
   font-size: 0.9rem;
-  border-top: 2px solid red;
-  opacity: 0.6;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #e8e8e8;
+
+
 
 
 }
 
-.legal {
-  margin: 1rem 1.5rem;
+.legal span {
+  padding-left: 1rem;
+
 }
 
 footer nav {
@@ -392,6 +395,10 @@ footer nav li {
   }
 
   .courses-mobile {
+    display: none;
+  }
+
+  .media {
     display: none;
   }
 }
@@ -478,6 +485,10 @@ nav.mobile {
     display: none;
   }
 
+  .content-img-mobile img {
+    width: 90%;
+  }
+
   .discription {
     width: 60%;
     margin: 1.5rem;
@@ -488,7 +499,7 @@ nav.mobile {
 }
 
   .content-right:last-child {
-    background-color: white;
+    background-color: #e8e8e8;
 }
 
 /* Learn */
@@ -500,7 +511,7 @@ nav.mobile {
   #study h1 {
     text-align: center;
     margin: 30px 0 16px;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 
   }
 
@@ -551,12 +562,14 @@ nav.mobile {
     width: 100%;
     margin: 1.5rem 0;
     font-family: "lato",sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 
   .exhibit-video {
     width: 100%;
-    margin: 0;
+    margin: 0 11px 8px;
+
+
   }
 
   .video-discription {
@@ -568,21 +581,26 @@ nav.mobile {
   footer {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    flex-direction: column;
     opacity: 1;
     border: 0;
 
   }
 
+
   footer .legal {
-    padding-top: 2rem;
+    padding-top: 0.5rem;
     color: #000000
   }
 
 
+  .media {
+    text-align: center;
+    margin: .5rem 1rem;
+  }
 
-  footer nav {
-    display: none;
+  .media i {
+    padding: .3rem;
   }
 
 }
